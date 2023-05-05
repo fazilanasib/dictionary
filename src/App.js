@@ -11,7 +11,7 @@ function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          <smal>Coded by Fazila Nasib</smal>
+          <small>Coded by Fazila Nasib</small>
         </footer>
       </div>
     </div>
