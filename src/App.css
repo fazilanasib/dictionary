@@ -4,6 +4,10 @@ body {
 
 .App-header {
   margin: 30px 0;
+  font-size: 40px;
+  font-weight: bolder;
+  color: red;
+  text-align: center;
 }
 
 .App-footer {
