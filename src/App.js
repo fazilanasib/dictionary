@@ -11,7 +11,12 @@ function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          <small>Coded by Fazila Nasib</small>
+          <small>
+            Coded and{" "}
+            <a href="https://github.com/fazilanasib/dictionary">
+              open-sourced by Fazila Nasib
+            </a>
+          </small>
         </footer>
       </div>
     </div>
