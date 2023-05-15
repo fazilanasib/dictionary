@@ -49,11 +49,13 @@ export default function Dictionary() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
 
-    let pexelsApiKey = `8AyRZKpCqrvMuX67e1sjwNNfckZlv4XrJ6A4BYJifv14NRtglz62EsGc`;
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+    let pexelsApiKey = `374d348affb35ed40a6f8a1oa7fc8tc6`;
+    let pexelsApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}}&key=${pexelsApiKey}`;
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+
     axios
       .get(pexelsApiUrl, {
-        headers: { Authorization: `Bearer ${pexelsApiKey}` },
+        headers: headers,
       })
       .then(handlePexelsResponse);
   }
