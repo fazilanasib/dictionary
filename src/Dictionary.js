@@ -50,7 +50,7 @@ export default function Dictionary() {
     axios.get(apiUrl).then(handleResponse);
 
     let pexelsApiKey = `374d348affb35ed40a6f8a1oa7fc8tc6`;
-    let pexelsApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}}&key=${pexelsApiKey}`;
+    let pexelsApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${pexelsApiKey}&per_page=6`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
 
     axios

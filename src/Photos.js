@@ -1,12 +1,25 @@
 import React from "react";
+import "./Photos.css";
 
 export default function Photos(props) {
   if (props.photos) {
     return (
       <section className="Photos">
-        {props.photos.map(function (photo, index) {
-          return <img src={photo.src.landscape} alt="/" key={index} />;
-        })}
+        <div className="row">
+          {props.photos.map(function (photo, index) {
+            return (
+              <div className="col-4">
+                <img
+                  src={photo.src.landscape}
+                  alt="/"
+                  key={index}
+                  className="img-fluid"
+                />
+                ;
+              </div>
+            );
+          })}
+        </div>
       </section>
     );
   } else {
